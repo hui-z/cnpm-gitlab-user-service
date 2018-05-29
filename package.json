@@ -1,6 +1,6 @@
 {
   "name": "@zaihui/cnpm-gitlab-user-service",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "gitlab user service for cnpmjs.org",
   "homepage": "",
   "author": {
@@ -16,12 +16,13 @@
     ""
   ],
   "devDependencies": {
-    "nsp": "^2.8.0",
+    "@zaihui/eslint-config-base": "^1.0.1",
+    "co": "^4.6.0",
     "eslint": "^4.19.1",
     "husky": "^0.14.3",
-    "lint-staged": "^6.1.1",
     "jest": "^22.0.6",
-    "@zaihui/eslint-config-base": "^1.0.1"
+    "lint-staged": "^6.1.1",
+    "nsp": "^2.8.0"
   },
   "engines": {
     "npm": ">= 4.0.0"
@@ -39,9 +40,7 @@
     ]
   },
   "eslintConfig": {
-    "extends": [
-      "@zaihui/base"
-    ],
+    "extends": [],
     "env": {
       "jest": true,
       "node": true
@@ -56,5 +55,6 @@
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0"
   }
 }
