@@ -1,3 +1,4 @@
 node_modules
 coverage
 dev-test.js
+npm-debug.log*
