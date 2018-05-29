@@ -18,13 +18,10 @@
   "devDependencies": {
     "nsp": "^2.8.0",
     "eslint": "^4.19.1",
-    "prettier": "^1.11.1",
     "husky": "^0.14.3",
     "lint-staged": "^6.1.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-config-xo": "^0.20.1",
-    "jest": "^22.0.6"
+    "jest": "^22.0.6",
+    "@zaihui/eslint-config-base": "^1.0.1"
   },
   "engines": {
     "npm": ">= 4.0.0"
@@ -39,37 +36,25 @@
     "*.js": [
       "eslint --fix",
       "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
     ]
   },
   "eslintConfig": {
     "extends": [
-      "xo",
-      "prettier"
+      "@zaihui/base"
     ],
     "env": {
       "jest": true,
       "node": true
     },
     "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "printWidth": 90
-        }
-      ]
-    },
-    "plugins": [
-      "prettier"
-    ]
+      "no-var": "off"
+    }
   },
   "repository": "jkzing/cnpm-gitlab-user-service",
   "jest": {
     "testEnvironment": "node"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+  }
 }
