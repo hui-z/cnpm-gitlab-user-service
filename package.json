@@ -1,6 +1,6 @@
 {
   "name": "@zaihui/cnpm-gitlab-user-service",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "gitlab user service for cnpmjs.org",
   "homepage": "",
   "author": {
